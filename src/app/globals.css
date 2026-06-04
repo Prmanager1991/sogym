@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F4F2EF;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@layer components {
+  .btn-burgundy {
+    @apply bg-burgundy text-white font-semibold rounded-xl py-3.5 px-4 flex items-center justify-center gap-2 active:opacity-80 transition-opacity;
+  }
+  .btn-outline {
+    @apply border border-gray-300 text-gray-800 font-semibold rounded-xl py-3.5 px-4 flex items-center justify-center gap-2 active:opacity-70 transition-opacity bg-white;
+  }
+  .btn-wa {
+    @apply bg-[#25D366] text-white font-semibold rounded-xl py-3.5 px-4 flex items-center justify-center gap-2 active:opacity-80 transition-opacity;
+  }
+  .card {
+    @apply bg-white rounded-xl border border-gray-100 overflow-hidden;
+  }
+  .input {
+    @apply w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:border-burgundy;
+  }
+}
